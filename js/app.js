@@ -17,6 +17,24 @@ const carreras = [
     imagen: 'assets/img/agropecuaria.webp',
     descripcion: 'Formación en producción agrícola y ganadera sostenible, con énfasis en innovación tecnológica.',
     duracion: '9 semestres'
+  },
+  {
+    nombre: 'Ingeniería Ambiental',
+    imagen: 'assets/img/ambiental.webp',
+    descripcion: 'Enfoque en la gestión y conservación del medio ambiente, con técnicas sostenibles.',
+    duracion: '8 semestres'
+  },
+  {
+    nombre: 'Ingeniería Electrónica',
+    imagen: 'assets/img/electronica.jpg',
+    descripcion: 'Especialización en diseño y desarrollo de sistemas electrónicos avanzados.',
+    duracion: '8 semestres'
+  },
+  {
+    nombre: 'Ingeniería Mecánica',
+    imagen: 'assets/img/mecanica.webp',
+    descripcion: 'Formación en diseño, análisis y mantenimiento de sistemas mecánicos.',
+    duracion: '8 semestres'
   }
 ];
 

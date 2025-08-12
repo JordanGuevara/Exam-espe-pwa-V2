@@ -27,4 +27,23 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.mdl-cell.mdl-cell--5-col > .mdl-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 300px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mdl-grid {
+  display: flex;
+  gap: 24px; 
+}
+
+.mdl-cell.mdl-cell--5-col {
+  display: flex;
+  flex-direction: column;
+}
 
