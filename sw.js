@@ -41,15 +41,18 @@ self.addEventListener('fetch', event => {
     caches.match(event.request)
       .then(response => {
         if (response) {
-          return response; 
+          return response;
         }
-        return fetch(event.request) 
-          .then(fetchResponse => {
-            return caches.open(CACHE_NAME).then(cache => {
-              cache.put(event.request, fetchResponse.clone()); 
-              return fetchResponse;
-            });
+        return fetch(event.request).then(fetchResponse => {
+          // Sólo cachear si la petición es HTTP o HTTPS
+          if (!event.request.url.startsWith('http')) {
+            return fetchResponse;
+          }
+          return caches.open(CACHE_NAME).then(cache => {
+            cache.put(event.request, fetchResponse.clone());
+            return fetchResponse;
           });
+        });
       }).catch(() => {
         if (event.request.destination === 'document') {
           return caches.match('./index.html');

@@ -1,0 +1,30 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+.page-content {
+  padding: 20px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mdl-card__media img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.mdl-card__supporting-text {
+  flex-grow: 1;
+}
+
+.mdl-card__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
